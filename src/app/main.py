@@ -10,13 +10,10 @@ from src.app.logic.preprocess import preprocess_image
 
 stamp_image_path = "src/static/stamp.png"
 
-# スタンプ画像の読み込み
 stamp_image = Image.open(stamp_image_path)
 
-# スタンプ画像の前処理
 preprocessed_stamp_image = preprocess_image(stamp_image)
 
-# FastAPIアプリケーションの初期化
 app = FastAPI()
 
 app.add_middleware(
@@ -27,7 +24,6 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# エンドポイントの追加
 @app.post("/check_similarity")
 async def similarity_endpoint(image_file: UploadFile = File(...)):
     return await check_similarity(preprocessed_stamp_image, image_file)
