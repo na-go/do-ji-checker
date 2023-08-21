@@ -7,11 +7,6 @@ Discord上で投稿された画像が特定のスタンプと似ているかを�
 uvicorn src.app.main:app --reload
 ```
 
-## テストの実行
-```bash
-pytest
-```
-
 ## 開発方法
 
 ### 1. 仮想環境のセットアップ
