@@ -1,0 +1,6 @@
+{
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.testing.pytestArgs": ["src/tests"],
+  "python.testing.autoTestDiscoverOnSaveEnabled": true,
+  "python.analysis.typeCheckingMode": "off"
+}
