@@ -1,6 +1,6 @@
-# Discord Image Similarity Bot
+# Image Similarity Checker
 
-Discord上で投稿された画像が特定のスタンプと似ているかを判定するおふざけbotです。
+画像が特定のスタンプと似ているかを判定するおふざけbotのためのAPIです。
 
 ## アプリケーションの起動
 ```bash
